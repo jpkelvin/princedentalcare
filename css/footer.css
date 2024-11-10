@@ -1,0 +1,266 @@
+/* ====================================================
+          Social Media Links section starts
+=======================================================*/
+
+.social-media-section {
+  background-color: #eeefe7;
+}
+
+.social-media-content{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.social-media-text {
+  font-size: 30px;  
+  font-weight: 550;
+  padding: 8px;
+  font-size: 3.2rem;
+  font-weight: 700;
+  font-family: 'Playfair Display', serif;
+}
+
+.social-media-text .span {
+  display: inline-block;
+  color: #F5BD02;
+  font-family: 'Playfair Display', serif;
+}
+
+.social-media-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.social-links {
+  margin: 20px;
+  font-size: 50px;
+}
+
+@media (max-width: 1040px) {
+
+  .social-media-section {
+    padding: 20px;
+  }
+
+  .social-media-text {
+    font-size:20px;
+    font-weight: bold;
+    padding: 15px;
+  }
+
+  .social-links {
+    margin: 20px;
+    font-size: 35px;
+  }
+
+}
+@media (max-width: 360px) {
+
+  .social-links {
+    margin: 10px;
+    font-size: 30px;
+  }
+
+}
+
+/* ====================================================
+          Social Media Links section ends
+=======================================================*/
+
+.footer {
+  bottom: 0;
+  width: 100%;
+  background: hsl(206, 20%, 14%);
+  padding: 15px 30px;
+  /* z-index: -999; */
+  position: static;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.footer-row {
+  background-image: url("../images/footer_bg1.png");
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-block: 40px;
+  padding: inherit;
+}
+
+.footer-logo {
+  font-size: 3.2rem;
+  font-weight: 700;
+  font-family: 'Playfair Display', serif;
+}
+
+.footer-logo .span {
+  display: inline-block;
+  color: #F5BD02;
+  font-family: 'Playfair Display', serif;
+}
+
+.footer-row .footer-col h4 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.timings, .contact-details{
+  font-family: 'Times New Roman', Times, serif;
+  align-items: center;
+}
+
+.contact-details i{
+  margin-right: 6px;
+  font-size: 18px;
+}
+
+.contact-links{
+  margin: 8px;
+}
+
+.timings h4{
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.footer-col .links {
+  margin-top: 10px;
+}
+
+
+.footer-col .links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footer-col .links li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin-block-start: 16px;
+  transition: 0.05s ease;
+}
+
+.footer-col .links li a:is(:hover, :focus) {
+  color: #F5BD02;
+}
+
+.footer-text {
+  max-width: 380px;
+  text-align: justify;
+  line-height: 2;
+  margin-block: 10px 0px;
+}
+
+.footer-col .icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.footer-col .icons i {
+  /* border: 1px solid; */
+  padding: 8px;
+  /* border-radius: 50%; */
+  font-size: 25px;
+}
+
+.footer-col .icons i:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  background-color: #0b0808;
+  font-size: 1.4rem;
+  padding: 1%;
+  color: #fff;
+}
+
+.footer-bottom .footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.footer-bottom-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.copyright-link {
+  display: inline-block;
+  color: gold;
+}
+
+
+@media (max-width: 768px) {
+  .footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .footer-container {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-row {
+    padding: 0px;
+  }
+
+  .footer-bottom {
+    font-size: 0.8rem;
+    padding: 1%;
+  }
+}
+
+@media (max-width: 800px) {
+  .footer-col{
+    margin-block: 10px;
+  }
+  .footer-row .footer-col h4{
+    margin-block-end:5px; 
+  }
+  .footer-text{
+    margin-block: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 323px) {
+  .footer-logo, .timings, .footer-row .footer-col h4{
+    font-size: 2.2rem;
+  }
+
+  .timings li{
+    font-size: 2rem;
+  }
+  
+}

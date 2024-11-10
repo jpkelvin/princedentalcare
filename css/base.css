@@ -1,0 +1,125 @@
+/* css to reset all the designs */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Times New Roman', Times, serif; */
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+.bi {
+    /* font-size: 20px;  */
+    /* Change size */
+    color: #F5BD02;  /* Change color */
+}
+
+li { list-style: none; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+address { font-style: normal; }
+
+.whatsapp-icon{
+  color: #25D366;
+}
+.instagram-icon{
+  color: #E1306C;
+}
+.facebook-icon{
+  color: #1877F2;
+}
+.linkedin-icon{
+  color: #0077B5;
+}
+.youtube-icon{
+  color: #FF0000;
+}
+
+/* Scroll bar */
+::-webkit-scrollbar {
+  width: 12px; 
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+   background-image: radial-gradient( #0f9ba3, #004aad);
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1d4be5;     
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #F5BD02; 
+}
+
+#topBtn {
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  display: none;
+  position: fixed;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.topBtn{
+  font-size: 36px;
+}
+
+#topBtn > .bi:hover {
+  color: #44e00b;
+}
+
+.chatBtn {
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  position: fixed;
+  display: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.chatBtn>.bi{
+  font-size: 40px;
+}
+
+
+@media (max-width: 500px) {
+  #topBtn{
+      left: 30px;
+  }
+  .chatBtn{
+    display: block;
+  }
+}

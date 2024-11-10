@@ -1,0 +1,627 @@
+/* ====================================================
+          Carousel Starts
+=======================================================*/
+
+/* Carousel container */
+.carousel-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    background-color: #051115;
+  }
+  
+  /* Carousel Slides */
+  .carousel-slide {
+    display: flex;
+    transition-property: opacity;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 200ms;
+  }
+  
+  /* Caption text */
+  .carousel-content {
+    color: #f40909;
+    font-size: 24px;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+  }
+  
+  .carousel-content>h3 {
+    font-family: 'Merienda One', cursive;
+  }
+  
+  .carousel-content-p {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    color: #333;
+    line-height: 2;
+  }
+  
+  .carousel-content-btn {
+    background-color: #0cbcdb;
+    display: inline-block;
+    padding: 1rem 3rem;
+    border-radius: .5rem;
+    font-size: 1.7rem;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    color: #F5BD02;
+    padding: 0 0.5rem;
+    border-radius: 0.25rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: 0.5s ease;
+  }
+  
+  /* Position the "prev button" to the left */
+  .prev {
+    left: 1rem;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 1rem;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* Prev & Next button hover effect */
+  .prev:hover,
+  .next:hover {
+    background-color: #000052;
+    color: #fff;
+  }
+  
+  /* Carousel dots */
+  .dots {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    color: #de1616;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .dots .dot {
+    list-style: none;
+    width: 20px;
+    height: 7px;
+    background-color: #ef1b1b;
+    margin: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+  }
+  
+  /* .active,  */
+  .dot:hover {
+    background-color: #0b3ee7;
+    opacity: 1;
+    width: 40px;
+    height: 10px;
+    cursor: pointer;
+  }
+  
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: .4
+    }
+  
+    to {
+      opacity: 1
+    }
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 500px) {
+  
+    .carousel-container {
+      height: 150px;
+    }
+  
+    .prev,
+    .next,
+    .carousel-text {
+      font-size: 11px
+    }
+  }
+  
+  /* ====================================================
+            Carousel Ends
+  =======================================================*/
+  
+
+  .dental-treatment-flow{
+    background-color: #051115;
+    color: white;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .dental-treatment{
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .dental-treatment>i{
+    padding: 10px;
+  }
+  
+/* ===========================================
+Offers Section Start
+======================================= */
+.offers-section{
+    background-color: #051730;
+    padding: 2%;
+    overflow: hidden;
+  }
+  .offers-header{
+    text-align: center;
+    font-size: clamp(3rem, 3vw, 6rem);
+    color: white;
+  }
+  .offers-container {
+    display: flex;
+     align-items: center;
+    /* flex-wrap: wrap; */
+    overflow: hidden;
+  }
+  
+  .offer-card {
+    flex: 1 1 40rem;
+    /* min-width: 50%; */
+    height: 25rem;
+    margin: 2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+  }
+  
+  .offer-card>img {
+    object-fit: cover;
+  }
+  
+  .offer-content {
+    position: absolute;
+    top: 55%;
+    left: 3rem;
+    transform: translateY(-50%);
+  }
+  
+  .offer-content>h3 {
+    font-size: 3.5rem;
+    color: #fff;
+    text-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+  }
+  
+  .offer-content>p {
+    font-size: 2rem;
+    color: #fff;
+  }
+  
+  .offer-btn {
+    height: 4rem;
+    background: blue;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    text-transform: capitalize;
+    margin: 1.5rem 0;
+  }
+  
+  /* ===========================================
+  Offers Section ends
+  ======================================= */
+
+
+  /* ===========================================
+Why choose us Section Start
+======================================= */
+.why-us-container {
+    background-color: #888785;  
+  }
+  
+  .why-us-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .why-us-content>h3 {
+    font-size: clamp(3rem, 3vw, 6rem);
+  }
+  
+  .why-us-content>p {
+    padding: 1%;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+  }
+  
+  .why-us-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  
+  .why-us-card {
+    height: 17rem;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    border-radius: 20px;
+    /* max-width: 20%; */
+    background-color: #bd86d3;
+  }
+  
+  .why-us-card>h3 {
+    font-size: 2rem;
+  }
+  
+  .why-us-card>i {
+    font-size: 4rem;
+    color: green;
+    padding: 1rem 0;
+  }
+  
+  .why-us-card>p {
+    font-size: 1.1rem;
+    padding: 10px 0;
+  }
+  
+  .why-us-card>button {
+    font-size: 1.1rem;
+    padding: 5px;
+  }
+  
+  .w-btn {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+  }
+  
+  .w-btn-rect-to-round {
+    font-size: 16px;
+    font-weight: 600;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+  }
+  
+  .w-btn-rect-to-round:hover {
+    border-radius: 60px;
+    color: rgb(255, 255, 255) !important;
+  }
+  
+  .w-btn-rect-to-round--black {
+    border: 2px solid rgb(51, 51, 51);
+    color: rgb(51, 51, 51) !important;
+  }
+  
+  .w-btn-rect-to-round--black:hover {
+    border-color: rgb(51, 51, 51);
+    background: rgb(51, 51, 51);
+  }
+  
+  /* ===========================================
+  Why choose us  Section ends
+  ======================================= */
+
+
+
+  
+/* ====================================================
+          Services section starts
+=======================================================*/
+.services-section{
+  background-color: #0cbcdb;
+}
+
+.services-content{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services-content>h3 {
+  font-size: clamp(3rem, 3vw, 6rem);
+  padding: 20px;
+}
+
+.tab-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #e0bf04;
+    border-radius: 10px;
+    padding: 2%;
+  }
+  
+  .tab-menu {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  .tab-menu>.tab {
+    flex: 1;
+    background-color: #97ee87;
+    font-size: clamp(1.3rem, 1vw, 2rem);
+    text-transform:capitalize;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 10px;
+  }
+  
+  .tab-menu>.tab.active {
+    background-color: #dd7819;
+  }
+  
+  .tab>a {
+    width: 100%;
+    height: 100%;
+    padding: 28px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    color: #000052;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+  }
+  
+  .tab-menu>.tab.active>a {
+    color: #f3f0ff;
+  }
+  
+  .tab-panels {
+    padding: 48px;
+  }
+  
+  .panel>h3 {
+    font-size: 28px;
+    color: red;
+    margin-bottom: 20px;
+  }
+  
+  .panel>p {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 28px;
+  }
+  
+  .panel>button {
+    padding: 10px 28px;
+    color: #fff;
+    background-color: #000052;
+    border-radius: 6px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  .panel>button:hover {
+    opacity: 0.9;
+  }
+  
+  
+  
+  .cover {
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/cover.jpg);
+    background-size: cover;
+    transform-origin: 0;
+    box-shadow: 1px 1px 12px #000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  
+  .book {
+    position: relative;
+    width: 270px;
+    height: 350px;
+    border-radius: 10px;
+    background-color: #effffe;
+    box-shadow: 1px 1px 12px #000;
+    transform: preserve-3d;
+    perspective: 2000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    text-align: center;
+  }
+  
+  .book:hover .cover {
+    transition: all 0.5s;
+    transform: rotatey(-80deg);
+  }
+  
+  .cover>p {
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+  
+  .cover>h2>.dot {
+    color: #1076c9;
+    font-size: 28px;
+    font-weight: bolder;
+  }
+  
+  .content>p {
+    margin-bottom: 10px;
+  }
+  
+  .service {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+    
+/* ====================================================
+          Services section ends
+=======================================================*/
+    
+/* ====================================================
+          Gallery section starts
+=======================================================*/
+
+.gallery-section{
+  background-color: #438cf2;
+}
+
+.gallery-content{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery-content>h3 {
+  font-size: clamp(3rem, 3vw, 6rem);
+  padding: 20px;
+}
+
+.gallery-images{
+  display:flex; 
+  justify-content: center;
+  flex-wrap:wrap;
+}
+
+.gallery-img {
+  width:30rem; 
+  height:20rem; 
+  margin:2rem; 
+  border-radius: .5rem;
+  box-shadow: 0 .2rem .5rem #fff;
+  overflow: hidden;
+}
+
+.gallery-img>img {
+  width:100%; 
+  height:100%;
+  object-fit: cover;
+}
+.gallery-img>img:hover {
+  transform: scale(1.4);
+} 
+
+@media only screen and (max-width: 334px) {
+  
+  .gallery-img {
+    width: 80%; 
+  }
+}
+/* ====================================================
+          Gallery section ends
+=======================================================*/
+
+/* ====================================================
+          FAQ section starts
+=======================================================*/
+
+.faq{
+  background-color: aliceblue;
+  justify-content: center;
+  padding-bottom: 5%;
+} 
+
+.faq-title{
+  font-size: 50px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.faq-questions-container{
+  width: 85%;
+  margin: 0 auto;
+}
+
+.faq-question{
+  border-bottom: 1px solid #fff;
+  padding: 1.25px;
+  margin: 10px;
+  background-color: #308ffb;
+  border-radius: 25px;
+}
+
+.faq-question>button{
+  width: 100%;
+  background-color: #308ffb;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 25px;
+  border:none;
+  outline: none;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 25px;
+}
+.faq-question>p{
+  font-size: 20px;
+  /* margin:  10px; */
+  max-height: 0;
+  opacity: 0;
+  line-height: 1.5;
+  overflow: hidden;
+  transition: all 0.6s ease;
+}
+.d-arrow{
+  transition: transform 0.5s ease-in ;
+  color: #fff;
+}
+
+/*add this class when click*/
+.faq-question>p.show{
+  max-height: 300px; 
+  opacity: 1;
+  padding: 0px 24px 12px 24px;
+}
+
+.faq-question>button .d-arrow.rotate{
+  transform: rotate(180deg);
+}
+/* ====================================================
+          FAQ section ends
+=======================================================*/

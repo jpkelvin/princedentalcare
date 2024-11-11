@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prince Dental Care</title>
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bookappointment.css">
+    <script src="scripts/headerfooter.js"></script>
+</head>
+
+<body>
+    <my-header></my-header>
+
+    <!----=================================================
+            Body Section starts 
+====================================================-->
+
+    <div class="appointment">
+        <div class="appointment-container">
+            <div class="title">Book Appointment</div>
+            <div class="content">
+                <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdVy6F72R7KyDjoJyrfGA5Ijg1nvQAaX2KHRgMB1qzrdLCxIQ/formResponse" method="post">
+                    <div class="user-details">
+                        <div class="input-box">
+                            <span class="details">Enter Patient's Name</span>
+                            <input type="text" placeholder="Enter your name" name="entry.1768338588" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Age</span>
+                            <input type="number" placeholder="Enter your age" min="0" max="100" name="entry.120375040" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Mobile</span>
+                            <input type="text" placeholder="Enter your mobile no" name="entry.1459317647" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Symptoms</span>
+                            <select name="entry.290458296">
+                                <option value="General Consultation">General Consultation</option>
+                                <option value="General Consultation">General Consultation</option>
+                                <option value="Toothache">Toothache</option>
+                                <option value="Cavities">Cavities</option>
+                                <option value="Bleeding Gums">Bleeding Gums</option>
+                                <option value="Deposits On Teeth">Deposits On Teeth</option>
+                                <option value="Stained or Discolored Teeth">Stained or Discolored Teeth</option>
+                                <option value="Sensitive Teeth">Sensitive Teeth</option>
+                                <option value="Missing Teeth">Missing Teeth</option>
+                                <option value="Bad Breath">Bad Breath</option>
+                                <option value="Dry Mouth">Dry Mouth</option>
+                                <option value="Cracked or Broken teeth">Cracked or Broken teeth</option>
+                                <option value="Mouth Ulcer">Mouth Ulcer</option>
+                                <option value="Jaw Pain">Jaw Pain</option>
+                                <option value="Malaligned Teeth">Malaligned Teeth</option>
+                                <option value="Others">Others</option>
+                            </select>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Date</span>
+                            <input type="date" id="date" placeholder="Select the Date" name="entry.391510535" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Time</span>
+                            <select name="entry.1488078028">
+                                <option value="10:00 AM to 11:00 PM">10:00 AM to 11:00 PM</option>
+                                <option value="11:00 AM to 12:00 PM">11:00 AM to 12:00 PM</option>
+                                <option value="12:00 PM to 01:00 PM">12:00 PM to 01:00 PM</option>
+                                <option value="01:00 PM to 02:00 PM">01:00 PM to 02:00 PM</option>
+                                <option value="02:00 PM to 03:00 PM">02:00 PM to 03:00 PM</option>
+                                <option value="03:00 PM to 04:00 PM">03:00 PM to 04:00 PM</option>
+                                <option value="04:00 PM to 05:00 PM">04:00 PM to 05:00 PM</option>
+                                <option value="05:00 PM to 06:00 PM">05:00 PM to 06:00 PM</option>
+                                <option value="06:00 PM to 07:00 PM">06:00 PM to 07:00 PM</option>
+                                <option value="07:00 PM to 08:00 PM">07:00 PM to 08:00 PM</option>
+                            </select>
+                        </div>
+                        <div class="gender-details">
+                            <input type="radio" name="entry.750170800" id="dot-1" value="Male">
+                            <input type="radio" name="entry.750170800" id="dot-2" value="Female">
+                            <span class="gender-title">Gender</span>
+                            <div class="category">
+                                <label for="dot-1">
+                                    <span class="dot one"></span>
+                                    <span class="gender">Male</span>
+                                </label>
+                                <label for="dot-2">
+                                    <span class="dot two"></span>
+                                    <span class="gender">Female</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Select Clinic</span>
+                            <select name="entry.1043951210">
+                                <option value="Prince Dental Care - Sarjapur">Sarjapur Bengaluru</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="Book Appointment">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!----==============================================
+            Body section ends 
+====================================================-->
+    <my-footer></my-footer>
+    <my-chat></my-chat>
+
+</body>
+
+<!-- Importing scripts starts-->
+<script src="scripts/header.js"></script>
+<script src="scripts/base.js"></script>
+<!-- Importing scripts ends -->
+<script>
+
+
+    const dp = document.getElementById('date');
+    var date = new Date();
+    date.setDate(date.getDate() + 1);
+    var bookingDate = date.toISOString().slice(0, 10);
+    dp.setAttribute('value', bookingDate);
+    dp.setAttribute('min', bookingDate);
+
+</script>
+
+</html>

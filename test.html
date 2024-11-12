@@ -1,0 +1,29 @@
+<div id="container"></div>
+<button id="generateContentBtn">Generate Buttons</button>
+
+<script>
+  // When the button is clicked, generate multiple buttons
+document.getElementById('generateContentBtn').addEventListener('click', function() {
+  // Insert 5 buttons dynamically into the container
+  document.getElementById('container').innerHTML = `
+    <div class="buttons-container">
+      <button class="item-button">Button 1</button>
+      <button class="item-button">Button 2</button>
+      <button class="item-button">Button 3</button>
+      <button class="item-button">Button 4</button>
+      <button class="item-button">Button 5</button>
+    </div>
+  `;
+  
+  // Now, select all buttons using querySelectorAll
+  const buttons = document.querySelectorAll('.item-button');
+
+  // Loop through all the buttons and attach event listeners
+  buttons.forEach((button, index) => {
+    button.addEventListener('click', function() {
+      alert(`Button ${index + 1} clicked!`);
+    });
+  });
+});
+
+</script>

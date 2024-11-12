@@ -1,0 +1,10 @@
+SI no,Category,filter,id,Name,Description,Image
+1,Restorative Dentistry,rct,rootcanaltreatment,Root Canal Treatment,Next to Canara Bank,rct.png
+2,Restorative Dentistry,rct,dentalfilling,Tooth Filling,Next to Canara Bank,toothfilling.png
+3,Restorative Dentistry,rct,dentalcrowns,Dental Crowns and Bridges,Next to Canara Bank,toothfilling.png
+4,Implants,rct,dentalimplants,Implant,Next to Canara Bank,implant.png
+5,Orthodontics,rctrct,dentalfilling,Tooth Filling,Next to Canara Bank,toothfilling.png
+6,Gum Surgery,implant,dentalcrowns,Dental Crowns and Bridges,Next to Canara Bank,toothfilling.png
+7,Oral Surgery,implant,Implant,Next to Canara Bank, Opposite to Pai,toothfilling.png
+8,Cosmetic Dentistry,orth,dentalcrowns,Dental Crowns and Bridges,Next to Canara Bank,rct.png
+9,implant,rct,dentalfilling,Tooth Filling,Next to Canara Bank,toothfilling.png

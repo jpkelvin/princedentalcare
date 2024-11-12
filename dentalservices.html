@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prince Dental Care</title>
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/dentalservices.css">
+    <script src="scripts/headerfooter.js"></script>
+</head>
+
+<body>
+    <my-header></my-header>
+
+<!----=================================================
+            Body Section starts 
+====================================================-->
+   
+<div class="services-container">
+    <h2>Our Specialities</h2>
+
+    <nav class="services-nav">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="rct">Restorative Dentistry</button>
+        <button class="filter" data-filter="implant">Implants</button>
+        <button class="filter" data-filter="ortho">Orthodontics</button>
+        <button class="filter" data-filter=".app">Gum Surgery</button>
+        <button class="filter" data-filter=".icon">Oral Surgery</button>
+        <button class="filter" data-filter=".icon">Cosmetic Dentistry</button>
+    </nav>
+
+    <div class="services-cards">
+        
+       <!-- <div class="service-card" data-name="{{dentalservice['filter']}}"> 
+           <figure>
+                <img src="{{ url_for('static',filename = 'images/services/' + dentalservice['Image'] )}}" alt="" class="s-img" />
+            </figure>
+            <div class="s-details">
+                <div class="s-cat">{{dentalservice['Category']}}</div>
+                <div class="s-title">{{dentalservice['Name']}}</div>
+                <div class="s-readmore-btn"> <a href="{{ url_for('service', treatment = dentalservice['id']) }}">Read More
+                    <img src="{{ url_for('static',filename = 'images/icons/icon_rm_right.svg')}}" class="s-rm-icon" alt="" width="24"
+                        height="24"></a>
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+</div>
+
+<!----==============================================
+            Body section ends 
+====================================================-->
+
+    <my-footer></my-footer>
+    <my-chat></my-chat>
+
+</body>
+
+<!-- Importing scripts starts-->
+<script src="scripts/header.js"></script>
+<script src="scripts/base.js"></script>
+<script src="scripts/dentalservices.js"></script>
+<!-- Importing scripts ends -->
+
+</html>

@@ -1,0 +1,6 @@
+<script>
+    // Get the last segment of the URL path (after /service/)
+const pathname = window.location.pathname;
+const serviceId = pathname.split('/').pop(); // Extract '5' from '/service/5'
+console.log(serviceId); // Outputs: 5
+</script>

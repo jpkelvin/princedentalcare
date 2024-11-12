@@ -14,7 +14,7 @@ class MyHeader extends HTMLElement {
         <div class="nav-head">
             <nav class="navbar">
                 <p class="nav-head-p"><i class="bi bi-clock icons"></i>Mon to Sun : 10:00am to 8:30pm</p>
-                <button class="nav-head-btn"><a href="{{ url_for('bookappointment') }}" class="nav-head-a">Book
+                <button class="nav-head-btn"><a href="bookappointment.html" class="nav-head-a">Book
                         Appointment</a></button>
                 <div>
                     <a href="mailto:dr.mjeselene@gmail.com" class="social-icons"><i class="bi bi-envelope-at"></i></a>
@@ -38,10 +38,10 @@ class MyHeader extends HTMLElement {
                 <li class="nav-item"><a class="nav-link" href="index.html"><i
                             class="bi bi-house-door"></i>Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ url_for('about') }}">About Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ url_for('services') }}">Specialities</a></li>
+                <li class="nav-item"><a class="nav-link" href="dentalservices.html">Specialities</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ url_for('clinics') }}">Our Clinics</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ url_for('contact') }}">Contact Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="{{ url_for('blogs') }}">Blogs</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
             </ul>
 
             <!-- Mobile Menu Button Icon starts - Hamburger -->
@@ -104,9 +104,10 @@ class MyFooter extends HTMLElement {
       <ul class="links">
         <li><a href="#">Home</a></li>
         <li><a href="#">About Us</a></li>
-        <li><a href="#">Treatments</a></li>
-        <li><a href="#">Book Appointment</a></li>
+        <li><a href="dentalservices.html">Treatments</a></li>
+        <li><a href="bookappointment.html">Book Appointment</a></li>
         <li><a href="#">Testimonials</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
       </ul>
     </div>
     <div class="footer-col">
@@ -167,7 +168,8 @@ class MyChat extends HTMLElement {
     this.innerHTML =
       `
         <link rel="stylesheet" href="css/base.css">
-        <button class="chatBtn"><i class="bi bi-whatsapp whatsapp-icon"></i></button>
+         <a href="https://api.whatsapp.com/send?phone=919731209120U+0026amp;text=Hello" target="_blank">
+         <button class="chatBtn"><i class="bi bi-whatsapp whatsapp-icon"></i></button></a>
         <button onclick="topFunction()" id="topBtn"><i class="bi bi-arrow-up-circle-fill topBtn"></i></button>
       `
   }

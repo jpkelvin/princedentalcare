@@ -1,7 +1,7 @@
 // Loading Service file
 document.addEventListener('DOMContentLoaded', () => {
     // Fetch the CSV file
-    fetch('../Services.csv')  // Adjust the path to your CSV file
+    fetch('Services.csv')  // Adjust the path to your CSV file
         .then(response => response.text())
         .then(data => {
             const dentalservices = parseCSV(data);
